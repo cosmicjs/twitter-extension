@@ -1,5 +1,5 @@
 # Cosmic Twitter Extension
-A [Cosmic JS](https://cosmicjs.com) Extension for searching Tweets by keyword. Save the Tweet to your Bucket. Saved Tweets are available as an API endpoint.
+A [Cosmic JS](https://cosmicjs.com) Extension for searching Tweets by keyword. Save the Tweet to your Bucket making tweets available in your Cosmic JS API endpoint.
 
 ### [Install Extension](https://cosmicjs.com/extensions/twitter-search)
 
