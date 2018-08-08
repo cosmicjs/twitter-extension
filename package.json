@@ -1,0 +1,20 @@
+{
+  "name": "twitter-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "request": "2.81.0",
+    "path": "0.12.7"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "Chunan Liang",
+  "license": "MIT"
+}
