@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Twitter Extension</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" rel="stylesheet"
+    type="text/css">
+</head>
+
+<body style="background-color: #F5F7F9">
+  <div class="container-fluid">
+    <div id="section1" class="col-md-12">
+		<iframe frameborder="0" id="frame"  style="height: -webkit-fill-available; width: 100%;" src="https://twitter-extension.cosmicapp.co"></iframe>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+    if (!results)
+      return null;
+    if (!results[2])
+      return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+  var config = {
+    slug: getParameterByName('bucket_slug'),
+    read_key: getParameterByName('read_key'),
+    write_key: getParameterByName('write_key')
+  };
+  var url = "https://twitter-extension.cosmicapp.co/?bucket_slug=" + config.slug + "&read_key=" + config.read_key + "&write_key=" + config.write_key;
+  $('#frame').attr('src', url)
+</script>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "title": "Twitter",
+  "font_awesome_class": "fa-twitter",
+  "image_url": "https://cosmic-s3.imgix.net/2d109d50-9b2c-11e8-8928-b51c5e4c8149-twitter.jpg",
+  "source_code_url": "https://github.com/cosmicjs/twitter-extension",
+  "object_types": [
+    {
+      "title": "Tweets",
+      "singular": "Tweet",
+      "slug": "tweets"
+    }
+  ]
+}

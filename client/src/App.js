@@ -154,7 +154,8 @@ class App extends Component {
       "type_slug": "tweets",
       "metafields": [
         {
-          "key": "Content HTML",
+          "title": "Tweet HTML",
+          "key": "tweet-html",
           "type": "html-textarea",
           "value": this.state.data.tweets[idx]
         }
